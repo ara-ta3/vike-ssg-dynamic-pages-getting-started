@@ -1,0 +1,32 @@
+{
+  "name": "vike-ssg-dynamic-pages-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ara-ta3/vike-ssg-dynamic-pages-getting-started#readme",
+  "bugs": {
+    "url": "https://github.com/ara-ta3/vike-ssg-dynamic-pages-getting-started/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ara-ta3/vike-ssg-dynamic-pages-getting-started.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vike": "^0.4.229",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
