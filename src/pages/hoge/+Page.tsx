@@ -1,15 +1,20 @@
-import React from "react";
-import type { PageContext } from "vike/types";
+import { usePageContext } from "vike-react/usePageContext";
+import { PageContext } from "vike/types";
 
 export { Page };
 
-function Page({ data }: { data: { id: string } }) {
-  console.log(data);
+function Page() {
+  const c = usePageContext() as PageContext<{
+    id: number;
+    title: string;
+    description: string;
+  }>;
+  const title = c.data.title;
+  const description = c.data.description;
+
   return (
     <div>
-      <p>hello</p>
+      <p>hello {c.data.id}</p>
     </div>
   );
 }
-
-const fakeDatabase = ["ネコの話", "イヌの話"];

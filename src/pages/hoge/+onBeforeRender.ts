@@ -1,19 +1,19 @@
 import { PageContext } from "vike/types";
 
 export async function onBeforeRender(pageContext: PageContext) {
-  const fakeDatabase = ["ネコの話", "イヌの話"];
   const id = parseInt(pageContext.routeParams.id);
-  if (isNaN(id) || id > fakeDatabase.length) {
+  let title = "ほげ null";
+  if (isNaN(id)) {
     return {
       pageContext: {
-        data: { id, title: "Hoge null" },
+        data: { id, title, description: "ほげ null" },
       },
     };
   }
-
+  title = `ほげ ${id}`;
   return {
     pageContext: {
-      data: { id, title: `ほげ ${id}` },
+      data: { id, title: `ほげ ${id}`, description: `ほげ ${id}` },
     },
   };
 }
