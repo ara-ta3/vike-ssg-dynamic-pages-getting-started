@@ -1,1 +1,1 @@
-export default "/hoge/:id";
+export default "/hoge/@id";
